@@ -1,0 +1,202 @@
+:root {
+    --principal: rgb(2,32,82);
+    --secundaria: rgb(0, 55, 151);
+    --titles: rgb(81, 129, 218);
+    --hover: rgba(30, 73, 148, 0.801);
+    --bordas: rgb(50, 144, 233);
+    --fonte_principal: 'Poppins';
+    --fonte_secundaria: 'Roboto';
+  }
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--fonte_principal)
+}
+
+header{
+    border-bottom: 1px solid rgba(128, 128, 128, 0.651);
+    display: flex;
+    align-items: center;
+}
+
+header .img-logo{
+    width: 5rem;
+    height: 4.5rem;
+}
+
+header .img-logo img{
+    width: 100%;
+    height: 100%;
+    image-rendering: auto;
+}
+
+#localizacao p{
+    margin: 0;
+    padding: 0;
+}
+
+#text-localizacao1, #text-numero{
+    font-weight: bold;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.781);
+}
+
+#text-localizacao2, #text-numero{
+    color: gray;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+#butao-associe{
+    width: 170px;
+    height: 50px;
+    border-radius: 100px;
+    border: none;
+    background: var(--principal);
+}
+
+#butao-associe:hover{
+    background: var(--secundaria);
+}
+
+#butao-associe a{
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
+/* ------------ section banner --------- */
+
+#banner-ouvidoria{
+    width: 100%;
+    height: 250px;
+    position: relative;
+    object-fit: cover;
+}
+
+#banner-ouvidoria #tamanho-img img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+}
+
+#banner-ouvidoria #card-ouvidoria{
+    position: absolute;
+    bottom: 40%;
+    left: 10%;
+}
+
+#banner-ouvidoria #card-ouvidoria h1{
+    color: white;
+    font-size: 50px;
+}
+
+/* -------------- main ouvidoria ----- */
+.text-canais{
+    color: gray;
+}
+
+.text-canais:hover{
+    color: rgb(100, 100, 100);
+}
+
+#card-auto-altura{
+    height: 250px;
+}
+
+/* --------------- informações ------------- */
+
+#informacao p{
+    color: gray;
+    font-family: var(--fonte_secundaria);
+}
+
+/* ----------------- footer ---------- */
+footer .text-a-footer{
+    color: gray;
+    font-family: var(--fonte_principal);
+}
+
+footer .text-a-footer:hover{
+    color: var(--bordas);
+}
+
+footer .title-footer{
+    font-family: var(--fonte_principal);
+    font-size: 20px;
+}
+
+footer #footer1 img{
+    width: 10em;
+}
+
+#footer2{
+    background-color: rgb(40,40,40);
+    border-top: 1px solid rgba(128, 128, 128, 0.692);
+}
+
+#footer2 p{
+    color: rgba(128, 128, 128, 0.692);
+    display: contents;
+}
+
+/* Botão inferior para o topo */
+#link-topo{
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+}
+
+/* Inputs */
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
+}
+input[type=number] { 
+   -moz-appearance: textfield;
+   appearance: textfield;
+}
+
+
+.forms-ouvidoria .form-group input{
+    margin-bottom: 10px;
+}
+
+.form-group label{
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+#sex-input{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    gap: 10px;
+}
+
+#assunto{
+    margin-bottom: 10px;
+    outline: none;
+}
