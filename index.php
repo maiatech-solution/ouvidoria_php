@@ -21,340 +21,50 @@
 
 <body class="bg-light">
 
-    <header class="container overflow-hidden" id="home">
+    <?php
+        @include('./assets/pages/cabecalho.php')
+    ?>
 
-        <div class="row w-100 d-flex justify-content-around">
-            <div class="col-lg-4 col-md-4 col-sm-12 mb-2 mt-2 d-flex justify-content-center align-items-center">
-                <div class="img-logo ">
-                    <a href="https://faspmpa.com.br/" target="_blank">
-                        <img class="img img-flex" src="assets/imgs/LogoSITE-1.svg" alt="logo">
-                    </a>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-6 mb-2 mt-2 d-flex justify-content-center align-items-center">
-                <div id="localizacao">
-                    <p id="text-localizacao1">Tv. Nove de Janeiro, 2600</p>
-                    <p id="text-localizacao2">Cremação, Belém – PA, 66065-155</p>
-                    <a title="CHAMADA DE VOZ" href="tel:(091)33230070" target="_blank" rel="noopener noreferrer">
-                        <p id="text-numero">91 3323 0070</p>
-                    </a>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-6 mb-2 mt-2 d-flex justify-content-center align-items-center">
-                <div>
-                    <button id="butao-associe"><a href="https://faspmpa.com.br/associe-se/">Associe-se</a></button>
-                </div>
-            </div>
-        </div>
+    <section class="container mb-5 d-flex justify-content-around overflow-hidden">
 
-    </header>
-
-    <nav class="overflow-y navbar sticky-top navbar-expand navbar-light container bg-light border-bottom rounded-0 d-flex align-items-center">
-            <div class="w-100 d-flex align-items-center align-items-center">
-                <div class="collapse navbar-collapse">
-                    <div class="row d-flex align-items-center">
-                        <div class="col" style="width: auto;">
-                            <ul class="navbar-nav w-100  d-flex justify-content-between">
-                                <li class="nav-item dropdown" id="myDropdown ">
-                                    <a class="nav-link dropdown-toggle font-weight-bold" href="#" data-bs-toggle="dropdown">
-                                        FASPM
-                                    </a>
-                                    <ul class="dropdown-menu bg-blue_fas_1 rounded-0">
-                                        <li> <a class="dropdown-item text-light" href="https://faspmpa.com.br/quem-somos/">
-                                                Quem somos</a>
-                                        </li>
-                                        <li>
-                                            <a class="dropdown-item text-light"
-                                                href="https://faspmpa.com.br/representacoes/">
-                                                Representações
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a class="dropdown-item text-light" href="https://faspmpa.com.br/fale-conosco/">
-                                                Contato
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col">
-                            <ul class="navbar-nav w-100 d-flex justify-content-between"
-                                style="width: auto; display: flex; flex-wrap: wrap;">
-                                <li class="nav-item dropdown " id="myDropdown">
-                                    <a class="nav-link dropdown-toggle font-weight-bold" href="#" data-bs-toggle="dropdown">
-                                        Transparência Pública
-                                    </a>
-                                    <ul class="dropdown-menu bg-blue_fas_1 rounded-0">
-                                        <li>
-                                            <a class="dropdown-item text-light" href="https://faspmpa.com.br/sobre-a-lai/">
-                                                Sobre a LAI </a>
-                                        </li>
-                                        <li>
-                                            <a class="dropdown-item text-light" href="#">
-                                                Perguntas Frequentes &raquo;
-                                            </a>
-                                            <ul class="submenu dropdown-menu bg-dark rounded-0">
-                                                <li>
-                                                    <a class="dropdown-item text-light"
-                                                        href="https://faspmpa.com.br/decreto-estadual-no-1-359-2015/">
-                                                        Decreto Estadual Nº 1.359/2015
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="dropdown-item text-light"
-                                                        href="https://faspmpa.com.br/convenios-duvidas/">
-                                                        Convênios
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="dropdown-item text-light"
-                                                        href="https://faspmpa.com.br/diarias/">
-                                                        Diárias
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="dropdown-item text-light"
-                                                        href="https://faspmpa.com.br/licitacoes-e-contratos/">Licitações e
-                                                        Contratos
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="dropdown-item text-light"
-                                                        href="https://faspmpa.com.br/orcamento/">
-                                                        Orçamento
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="dropdown-item text-light"
-                                                        href="https://faspmpa.com.br/outras-duvidas/">
-                                                        Outras Dúvidas
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="dropdown-item text-light"
-                                                        href="https://faspmpa.com.br/outras-duvidas/">
-                                                        Suprimento de Fundos
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="dropdown-item text-light"
-                                                        href="https://faspmpa.com.br/tributos/">
-                                                        Tributos
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            <a class="dropdown-item text-light"
-                                                href="https://faspmpa.com.br/prestacoes-de-contas-anuais-auditorias-externas/">
-                                                Prestação de Contas Anuais &<br> Auditorias Externa
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a class="dropdown-item text-light" href="https://faspmpa.com.br/convenios/">
-                                                Convênios
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a class="dropdown-item text-light" href="#">
-                                                Licitações e Contratos &raquo;
-                                            </a>
-                                            <ul class="submenu dropdown-menu bg-dark rounded-0">
-                                                <li><a class="dropdown-item text-light"
-                                                        href="https://faspmpa.com.br/chamamento-publico/">
-                                                        CHAMAMENTO PÚBLICO
-                                                    </a>
-                                                </li>
-                                                <li><a class="dropdown-item text-light"
-                                                        href="https://faspmpa.com.br/contratos-vigentes/">
-                                                        CONTRATOS VIGENTES
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            <a class="dropdown-item text-light" href="#">
-                                                Pregão Eletrônico &raquo;
-                                            </a>
-                                            <ul class="submenu dropdown-menu bg-dark rounded-0">
-                                                <li>
-                                                    <a class="dropdown-item text-light"
-                                                        href="https://faspmpa.com.br/editais/">
-                                                        PREGÃO ELETRÔNICOS - EDITAIS
-                                                    </a>
-                                                </li>
-                                                <li><a class="dropdown-item text-light"
-                                                        href="https://faspmpa.com.br/processos/">
-                                                        PREGÃO ELETRÔNICOS - PROCESSOS
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
-                        </div>
-                        <div class="col">
-                            <ul class="navbar-nav w-100 d-flex justify-content-between">
-                                <li class="nav-item dropdown" id="myDropdown">
-                                    <a class="nav-link dropdown-toggle font-weight-bold" href="#" data-bs-toggle="dropdown">
-                                        Cadastre-se
-                                    </a>
-                                    <ul class="dropdown-menu bg-blue_fas_1 rounded-0">
-                                        <li> <a class="dropdown-item text-light" href="https://faspmpa.com.br/associe-se/">
-                                                Seja um associado
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a class="dropdown-item text-light" href="https://faspmpa.com.br/fornecedores/">
-                                                Fornecedores
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col">
-                            <ul class="navbar-nav w-100 d-flex justify-content-between">
-                                <li class="nav-item dropdown" id="myDropdown">
-                                    <a class="nav-link dropdown-toggle font-weight-bold" href="#" data-bs-toggle="dropdown">
-                                        Benefícios
-                                    </a>
-                                    <ul class="dropdown-menu bg-blue_fas_1 rounded-0">
-                                        <li>
-                                            <a class="dropdown-item text-light"
-                                                href="https://faspmpa.com.br/service/auxilio-funeral-do-dependente/">
-                                                Auxílio Funeral
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a class="dropdown-item text-light"
-                                                href="https://faspmpa.com.br/service/auxilio-financeiro/">
-                                                Auxílio Financeiro
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a class="dropdown-item text-light"
-                                                href="https://faspmpa.com.br/service/auxilio-funeral-do-estado/">
-                                                Auxílio Funeral do Estado
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a class="dropdown-item text-light"
-                                                href="https://faspmpa.com.br/service/conducao-veicular/">
-                                                Condução Veicular
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a class="dropdown-item text-light"
-                                                href="https://faspmpa.com.br/service/doacoes-diversas/">
-                                                Doações Diversas
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a class="dropdown-item text-light" href="#">
-                                                Farmaceso &raquo;
-                                            </a>
-                                            <ul class="submenu dropdown-menu bg-dark rounded-0">
-                                                <li>
-                                                    <a class="dropdown-item text-light"
-                                                        href="https://faspmpa.com.br/service/farmaceso/">
-                                                        Gratuidade
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="dropdown-item text-light"
-                                                        href="https://faspmpa.com.br/service/farmaceso-a-vista-consignacao/">
-                                                        À vista e Consignação
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            <a class="dropdown-item text-light"
-                                                href="https://faspmpa.com.br/service/hospedagem/">
-                                                Hospedagem
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a class="dropdown-item text-light"
-                                                href="https://faspmpa.com.br/service/kit-fralda/">
-                                                Kit Fralda
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a class="dropdown-item text-light"
-                                                href="https://faspmpa.com.br/service/passagem/">
-                                                Passagem
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a class="dropdown-item text-light"
-                                                href="https://faspmpa.com.br/service/peculio/">
-                                                Pecúlio
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col">
-                            <ul class="navbar-nav w-100 d-flex justify-content-between">
-                                <li class="nav-item cursor-pointer">
-                                    <a class="nav-link font-weight-bold text-black" href="https://faspmpa.com.br/noticias/">
-                                        Notícias
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col">
-                            <ul class="navbar-nav w-100 d-flex justify-content-between">
-                                <li class="nav-item cursor-pointer">
-                                    <a class="nav-link font-weight-bold text-black"
-                                        href="https://faspmpa.com.br/credenciadas/">
-                                        Credenciados
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col">
-                            <ul class="navbar-nav w-100 d-flex justify-content-between">
-                                <li class="nav-item">
-                                    <a class="nav-link font-weight-bold" href="index.php" id="color-blue">
-                                        Ouvidoria
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
+        <div class="row w-100 d-flex justify-content-center">
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4 d-flex justify-content-center">
+                <div class="card d-flex" style="width: 18rem;">
+                    <img src="./assets/imgs/ouvidoria.jpg" class="card-img-top" alt="..." style="height: 150px;">
+                    <div class="card-body mb-md-7">
+                        <h5 class="card-title">Nova Demanda</h5>
+                        <p class="card-text text-muted">Quando a demanda for relacionada a um serviço prestado pela
+                            FASPM.</p>
+                        <a href="nova_ouvidoria.php" class="btn btn-primary"><i
+                                class="fa-solid fa-plus justify-content-center"></i></a>
                     </div>
                 </div>
-                <!-- container-fluid.// -->
-    </nav>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4 d-flex justify-content-center">
+                <div class="card" style="width: 18rem;">
+                    <img src="./assets/imgs/pesquisa-ouvidoria.png" class="card-img-top" alt="..."
+                        style="height: 150px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Consultar Demanda</h5>
+                        <p class="card-text text-muted">Possibilita visualizar informações sobre demanda anteriormente
+                            cadastrada.</p>
+                        <a href="consultar_ouvidoria.php" class="btn btn-primary"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    </div>
+                </div>
+            </div>
 
-    <section id="banner-ouvidoria" class="mb-5 overflow-hidden">
-        <div id="tamanho-img">
-            <img src="https://faspmpa.com.br/wp-content/uploads/defaulthero.jpg" alt="corporacao">
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4 d-flex justify-content-center" id="card-auto-altura">
+                <div class="card" style="width: 18rem;">
+                    <img src="./assets/imgs/relatorios.png" class="card-img-top" alt="..." style="height: 150px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Relatório Anual</h5>
+                        <a href="#" class="btn btn-primary"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div id="card-ouvidoria">
-            <h1 id="title-ouvidoria">Ouvidoria</h1>
-        </div>
+
     </section>
-
-   
-
-    <?php
-      if(isset($_GET['pagina'])){
-        $pagina = $_GET['pagina'];
-      }
-      else{
-        $pagina = 'body';
-      }
-      switch($pagina){
-          default: include 'body.php'; break;
-          case 'consultar_ouvidoria': include '/pages/consultar_ouvidoria.php'; break;
-          case 'nova_ouvidoria': include '/pages/nova_ouvidoria.php'; break;        
-      }
-      ?>
 
     <section class="container mb-5 overflow-hidden">
         <div class="row border-blue_fas">
@@ -429,86 +139,14 @@
             A Lei Geral de Proteção de Dados (Lei nº 13.709/2018).
         </p>
     </section>
+    
+    <?php
+        @include('./assets/pages/footer.php')
+    ?>
 
-    <footer class="container-fluid" style="height: 450px;">
-
-        <div class="row bg-blue_fas" id="footer1">
-            <div class="col-lg-3 col-md-12 d-flex flex-column justify-content-center align-items-center"
-                style="height: 380px;">
-                <div class="d-flex flex-column justify-content-center align-items-center" style="height: 250px;">
-                    <img src="./assets/imgs/Brasão_do_Pará.svg" alt="brasao_estado">
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 d-flex flex-column justify-content-center align-items-center"
-                style="height: 380px;">
-                <div class="d-flex flex-column justify-content-between w-100" style="height: 250px;">
-                    <h4 class="text-light title-footer">FASPM - PA</h4>
-                    <a title="CHAMADA DE VOZ" href="tel:(091)33230070" target="_blank" rel="noopener noreferrer"
-                        class="text-a-footer">91 3323
-                        0070</a>
-                    <a title="FARMACESO WHATSAPP" href="https://api.whatsapp.com/send?phone=5591988953815"
-                        target="_blank" rel="noopener noreferrer" class="text-a-footer">91 98895 3815 Farmacia</a>
-                    <a title="SERVIÇO SOCIAL WHATSAPP" href="https://api.whatsapp.com/send?phone=5591988953827"
-                        target="_blank" rel="noopener noreferrer" class="text-a-footer">91 98895 3827 Social</a>
-                    <a href="https://api.whatsapp.com/send?l=pt-BR&amp;phone=5591988953555" class="text-a-footer">91
-                        98895 3555 Fardaceso</a>
-                    <a title="COMO CHEGAR?" href="https://g.page/FASPM?share" target="_blank" rel="noopener noreferrer"
-                        class="text-a-footer">Tv. Nove de Janeiro, 2600 – Cremação, Belém – PA, 66065-155</a>
-                    <a title="ENVIAR E-MAIL" href="mailto:contato@faspmpa.com.br"
-                        class="text-a-footer">faspm@faspmpa.com.br</a>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 d-flex flex-column justify-content-center align-items-center"
-                style="height: 380px;">
-                <div class="d-flex flex-column justify-content-between w-100" style="height: 250px;">
-                    <h4 class="text-light title-footer">LINKS ÚTEIS</h4>
-                    <a href="https://www.sistemas.pa.gov.br/portaldoservidor/form_login.php?s=Y29udHJhY2hlcXVl"
-                        class="text-a-footer">CONTRACHEQUE
-                        – ATIVO</a>
-                    <a href="https://beneficiario.igeprev.pa.gov.br/eprev/LoginAcessoBeneficiario.user"
-                        class="text-a-footer">CONTRACHEQUE –
-                        VETERANO</a>
-                    <a title="SISTEMA DE GERENCIAMENTO do FASPM" href="http://sigfas.faspm.pa.gov.br/sigfas"
-                        target="_blank" rel="noopener noreferrer" class="text-a-footer">SIGFAS</a>
-                    <a title="Processo Administrativo Eletrônico"
-                        href="https://www.sistemas.pa.gov.br/governodigital/public/main/index.xhtml" target="_blank"
-                        rel="noopener noreferrer" class="text-a-footer">SISTEMA PAE</a>
-                    <a href="https://faspmpa.com.br/fornecedores" class="text-a-footer">ACESSO FORNECEDOR</a>
-                    <a href="https://faspmpa.com.br/ouvidoria/" class="text-a-footer">OUVIDORIA</a>
-                    <a href="https://www.sistemas.pa.gov.br/esic/public/main/index.xhtml" target="_blank">
-                        <img style="width: 50px !important; height: 13px !important;"
-                            src="https://faspmpa.com.br/wp-content/uploads/SIC-THUMB.png" alt="SICPA-LOGO">
-                    </a>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 d-flex flex-column justify-content-center align-items-center"
-                style="height: 380px;">
-                <div class="d-flex flex-column justify-content-between w-100" style="height: 250px;">
-                    <h4 class="text-light title-footer">PUBLICAÇÕES</h4>
-                    <a title="NORMAS do FASPM" href="https://faspmpa.com.br/normas-faspm/" rel="noopener"
-                        class="text-a-footer">NORMAS DO
-                        FASPM</a>
-                    <a title="DECRETOS" href="https://faspmpa.com.br/downloads-diversos/" rel="noopener"
-                        class="text-a-footer">DOWNLOADS</a>
-                    <a href="#" class="text-a-footer">FORMULÁRIOS</a>
-                    <a href="https://faspmpa.com.br/acervo-de-leis/" class="text-a-footer">LEGISLAÇÃO</a>
-                    <a href="https://faspmpa.com.br/links-uteis/" class="text-a-footer">DICAS IMPORTANTES</a>
-                </div>
-            </div>
-            <div class="col-12 d-flex flex-column justify-content-center align-items-center" id="footer2"
-                style="height: 70px;">
-                <p>
-                    FASPM © 2020 Todos os direitos reservados.
-                </p>
-            </div>
-        </div>
-    </footer>
-
-    <a href="#home" id="link-topo">
-        <button class="btn btn-primary rounded-0">
-            <i class="fa-solid fa-angle-up"></i>
-        </button>
-    </a>
+    <?php
+        @include('./assets/pages/botao_para_topo.php')
+    ?>
 
 </body>
 
